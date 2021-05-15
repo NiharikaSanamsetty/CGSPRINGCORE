@@ -1,4 +1,4 @@
-package com.journaldev.spring.bean;
+package com.nikki.spring.bean;
 
 public class Employee {
 

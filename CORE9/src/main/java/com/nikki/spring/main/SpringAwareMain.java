@@ -1,4 +1,4 @@
-package com.journaldev.spring.main;
+package com.nikki.spring.main;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

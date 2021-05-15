@@ -1,4 +1,4 @@
-package com.journaldev.spring.service;
+package com.nikki.spring.service;
 
 import java.util.Arrays;
 

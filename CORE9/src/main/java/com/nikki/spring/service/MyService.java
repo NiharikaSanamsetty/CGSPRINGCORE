@@ -1,4 +1,4 @@
-package com.journaldev.spring.service;
+package com.nikki.spring.service;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

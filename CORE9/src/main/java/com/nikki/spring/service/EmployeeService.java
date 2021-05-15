@@ -1,9 +1,9 @@
-package com.journaldev.spring.service;
+package com.nikki.spring.service;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-import com.journaldev.spring.bean.Employee;
+import com.nikki.spring.bean.Employee;
 
 public class EmployeeService implements InitializingBean, DisposableBean{
 

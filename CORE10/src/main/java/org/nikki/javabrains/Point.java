@@ -1,4 +1,4 @@
-package org.ram.javabrains;
+package org.nikki.javabrains;
 
 public class Point {
 

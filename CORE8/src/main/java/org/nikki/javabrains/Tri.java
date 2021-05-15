@@ -1,4 +1,4 @@
-package org.ram.javabrains;
+package org.nikki.javabrains;
 
 import java.util.List;
 
@@ -7,12 +7,12 @@ import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public class Triangle implements ApplicationContextAware, BeanNameAware {
+public class Tri {
 
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
-	private ApplicationContext context = null;
+	
 	
 	public Point getPointA() {
 		return pointA;
@@ -45,14 +45,25 @@ public class Triangle implements ApplicationContextAware, BeanNameAware {
 		System.out.println("Point A = ( " +getPointC().getX() + ", " +getPointC().getY() + ")");
 	}
 
-	public void setBeanName(String beanName) {
-		System.out.println("Bean nae is : "+beanName);
-		
+	/*
+	 * @Override public void afterPropertiesSet() throws Exception {
+	 * System.out.println("InitializingBean init method called for Triangle");
+	 * 
+	 * }
+	 * 
+	 * @Override public void destroy() throws Exception {
+	 * System.out.println("DisposableBean destroy method called for Triangle");
+	 * 
+	 * }
+	 */
+	
+	public void myInit()
+	{
+		System.out.println("MY own Init() called");
+	}
+	public void cleanUp()
+	{
+		System.out.println("My own Destroy() called");
 	}
 
-	public void setApplicationContext(ApplicationContext context) throws BeansException {
-		this.context =  context;
-		System.out.println(context);
-		
-	}
 }
